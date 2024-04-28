@@ -1,4 +1,5 @@
 import Discover from "../components/Discover";
+import Hero from "../components/bookeeping/Hero";
 import Features from "../components/Features"
 import Sevensimple from "../components/SevenSimple";
 import SecurityProduct from '../components/securityProduct';
@@ -13,6 +14,7 @@ import Testimonial from "../components/Testimonial";
 export default function Product() {
     return (
       <>
+        <Hero/>
         <Features/>
         <Sevensimple />
         <Discover />

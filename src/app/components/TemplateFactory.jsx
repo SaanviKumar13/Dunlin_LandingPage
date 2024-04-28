@@ -47,13 +47,13 @@ function TemplateFactory() {
         <MovingImages
           images={images}
           speed={3000}
-          dataOrder={[0, 1, 2, 3]}
+          dataOrder={[...Array(images.length).keys()]}
           className="mb-5"
         />
         <MovingImages
           images={images}
           speed={5000}
-          dataOrder={[3, 2, 1, 0]}
+          dataOrder={[...Array(images.length).keys()].reverse()}
           className="mt-5"
         />
       </div>

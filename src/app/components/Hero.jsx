@@ -18,7 +18,7 @@ function Hero() {
                         />
                     </div>
                     <div className="flex space-x-6 items-center justify-center">
-                        <a href="#" className="text-gray-300 hover:text-gray-300 text-sm ">Product</a>
+                        <a href="/product" className="text-gray-300 hover:text-gray-300 text-sm ">Product</a>
                         <a href="#" className="text-gray-300 hover:text-gray-300 text-sm ">Usecase</a>
                         <a href="#" className="text-gray-300 hover:text-gray-300 text-sm ">Integration</a>
                         <a href="#" className="text-gray-300 hover:text-gray-300 text-sm ">Templates</a>
