@@ -46,13 +46,13 @@ function TemplateFactory() {
       <div className="py-16">
         <MovingImages
           images={images}
-          speed={3000}
+          speed={2000}
           dataOrder={[...Array(images.length).keys()]}
           className="mb-5"
         />
         <MovingImages
           images={images}
-          speed={5000}
+          speed={4000}
           dataOrder={[...Array(images.length).keys()].reverse()}
           className="mt-5"
         />

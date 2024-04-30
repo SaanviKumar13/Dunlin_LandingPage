@@ -1,6 +1,6 @@
 import Discover from "../components/Discover";
-import Hero from "../components/bookeeping/Hero";
-import Features from "../components/Features"
+import Hero from "../components/consolidation/Hero";
+import Features from "../components/consolidation/Features";
 import Sevensimple from "../components/SevenSimple";
 import SecurityProduct from '../components/securityProduct';
 import DunlineLife from "../components/DunlineLife";
@@ -13,21 +13,20 @@ import Testimonial from "../components/Testimonial";
 
 export default function Product() {
     return (
-      <>
-        <Hero/>
-        <Features/>
-        <Sevensimple />
-        <Discover />
-        
-        <TemplateFactory />
-        <SecurityProduct/>
-        <Integrations />
-        <Discover /> 
-        {/* <DunlineLife />
+        <>
+            <Hero />
+            <Features/>
+            <Sevensimple />
+            <Discover />
+            <TemplateFactory />
+            <SecurityProduct />
+            <Integrations />
+            <Discover />
+            {/* <DunlineLife />
         <Testimonial />  
        */}
-        <Footer />
-      </>
-      
+            <Footer />
+        </>
+
     )
 }
