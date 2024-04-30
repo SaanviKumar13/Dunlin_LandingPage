@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  @font-face {
+    font-family: Bricolage Grotesque, "sans-serif";
+    src: url(/fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf) format('truetype');
+    font-weight: 1 1000;
+    font-stretch: 1% 100%;
+    font-style: normal;
+  }
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
