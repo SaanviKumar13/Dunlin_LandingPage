@@ -18,7 +18,7 @@ module.exports = {
       },
       fontFamily: {
         bricolage: ["Bricolage Grotesque", "sans-serif"],
-      }
+      },
       animation: {
         marquee: "marquee 25s linear infinite",
       },
