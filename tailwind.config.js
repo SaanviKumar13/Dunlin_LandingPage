@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "bricolage-grotesque": ["Bricolage Grotesque", "sans-serif"],
+        cursive: ["Bad Script", "cursive"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
