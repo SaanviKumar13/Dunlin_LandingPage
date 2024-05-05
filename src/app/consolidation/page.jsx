@@ -10,6 +10,7 @@ import Integrations from "../components/Integrations";
 import Security from "../components/Security";
 import TemplateFactory from "../components/TemplateFactory";
 import Testimonial from "../components/Testimonial";
+import HowDunlinAI from "../components/HowDunlinAI";
 import Steps from "../components/Steps";
 
 const steps = [
@@ -40,6 +41,7 @@ export default function Product() {
     <>
       <Hero />
       <Features />
+      <HowDunlinAI />
       <Steps
         stepName="Centralize and Consolidate your Financial Systems in Five Simple Steps"
         steps={steps}

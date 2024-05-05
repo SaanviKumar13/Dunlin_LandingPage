@@ -5,6 +5,7 @@ import Features from "../components/reporting/Features";
 import TemplateFactory from "../components/TemplateFactory";
 import Blog from "../components/reporting/Blog";
 import Integrations from "../components/Integrations";
+import HowDunlinAI from "../components/HowDunlinAI";
 import Steps from "../components/Steps";
 
 const steps = [
@@ -47,6 +48,7 @@ export default function Product() {
     <>
       <Hero />
       <Features />
+      <HowDunlinAI />
       <Steps
         stepName="Instantly Generate Reports in Eight Simple Steps"
         steps={steps}

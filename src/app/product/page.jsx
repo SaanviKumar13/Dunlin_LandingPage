@@ -11,6 +11,7 @@ import Integrations from "../components/Integrations";
 import Security from "../components/Security";
 import TemplateFactory from "../components/TemplateFactory";
 import Testimonial from "../components/Testimonial";
+import HowDunlinAI from "../components/HowDunlinAI";
 
 const steps = [
   {
@@ -44,6 +45,7 @@ export default function Product() {
     <>
       <Hero />
       <Features />
+      <HowDunlinAI />
       <Steps
         stepName="Complete Your Month-End Book Closing in Seven Simple Steps"
         steps={steps}
