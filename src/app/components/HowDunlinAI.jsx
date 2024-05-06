@@ -1,7 +1,11 @@
-const features = [
+import CFOCard from "./case/CFOCard";
+
+const firstArray = [
   "Cutting-Edge Security Standards",
   "Proprietary AI Solution",
   "Extensive Integrations",
+];
+const secondArray = [
   "Top-tier Workflows",
   "Trained on Thousands of Accounts",
   "In-House Hosted Model",
@@ -20,15 +24,8 @@ const HowDunlinAI = () => {
         do it
       </h1>
       <div className="flex flex-col items-center lg:flex-row md:flex-wrap gap-5 mt-5">
-        {features.map((name, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-3xl md:w-[60vw] lg:w-[30vw] h-[35vh] lg:h-[40vh] flex flex-col items-center justify-center p-5"
-          >
-            <div className="bg-[#e8ebf7] w-[70vw] md:w-[56vw] lg:w-[28vw] h-[30vh] rounded-t-3xl"></div>
-            <h2 className="text-[#0A2850] p-4 font-semibold">{name}</h2>
-          </div>
-        ))}
+        <CFOCard items={firstArray} dir="rtl" />
+        <CFOCard items={secondArray} dir={"ltr"} />
       </div>
     </div>
   );
