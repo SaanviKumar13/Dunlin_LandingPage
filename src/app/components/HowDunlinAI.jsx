@@ -13,7 +13,7 @@ const secondArray = [
 
 const HowDunlinAI = () => {
   return (
-    <div className="bg-gradient-to-b from-[#e4f3e6] via-[#f2f6f8] to-[#f8f4fc] min-h-screen h-full p-10">
+    <div className="bg-gradient-to-b from-[#e4f3e6] via-[#f2f6f8] to-[#f8f4fc] min-h-screen h-full py-10">
       <h1 className="font-bricolage-grotesque text-3xl md:text-5xl font-bold text-center flex flex-row items-center gap-3 md:gap-6 justify-center">
         Here's how{" "}
         <img
@@ -23,7 +23,7 @@ const HowDunlinAI = () => {
         />
         do it
       </h1>
-      <div className="flex flex-col items-center lg:flex-row md:flex-wrap gap-5 mt-5">
+      <div className="flex flex-col items-center lg:flex-row md:flex-wrap w-[98vw] overflow-x-clip mt-5">
         <CFOCard items={firstArray} dir="rtl" />
         <CFOCard items={secondArray} dir={"ltr"} />
       </div>

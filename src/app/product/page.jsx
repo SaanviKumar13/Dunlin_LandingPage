@@ -45,11 +45,12 @@ export default function Product() {
     <>
       <Hero />
       <Features />
-      <HowDunlinAI />
+
       <Steps
         stepName="Complete Your Month-End Book Closing in Seven Simple Steps"
         steps={steps}
       />
+      <HowDunlinAI />
       <Sevensimple />
       <Discover />
 
