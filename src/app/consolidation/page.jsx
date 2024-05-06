@@ -41,11 +41,12 @@ export default function Product() {
     <>
       <Hero />
       <Features />
-      <HowDunlinAI />
+
       <Steps
         stepName="Centralize and Consolidate your Financial Systems in Five Simple Steps"
         steps={steps}
       />
+      <HowDunlinAI />
       <Sevensimple />
       <Discover />
       <TemplateFactory />

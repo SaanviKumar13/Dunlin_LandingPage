@@ -48,11 +48,12 @@ export default function Product() {
     <>
       <Hero />
       <Features />
-      <HowDunlinAI />
+
       <Steps
         stepName="Instantly Generate Reports in Eight Simple Steps"
         steps={steps}
       />
+      <HowDunlinAI />
       <Discover />
       <TemplateFactory />
       <Blog />

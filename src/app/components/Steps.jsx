@@ -2,7 +2,7 @@ import StepCard from "./StepCard";
 
 const Steps = ({ stepName, steps }) => {
   return (
-    <div className="bg-[#3F57D6] h-full min-h-screen flex flex-col items-center lg:items-start lg:flex-row justify-evenly p-10 ">
+    <div className="bg-[#3F57D6] min-h-screen flex flex-col items-center lg:items-start lg:flex-row justify-evenly p-10 ">
       <div className="mt-5 lg:mt-28 flex flex-col items-center lg:items-start">
         <h1 className="text-white font-bold text-3xl md:text-5xl lg:text-7xl md:w-[80vw] lg:w-[50vw] font-bricolage-grotesque">
           {stepName}
@@ -19,7 +19,7 @@ const Steps = ({ stepName, steps }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-4 mx-2 mt-28">
+      <div className="flex flex-col h-screen overflow-y-scroll duration-200 p-3 gap-4 mx-2 mt-3 no-scrollbar">
         {steps.map((step, index) => (
           <StepCard text={step.text} img={step.img} key={index} />
         ))}
