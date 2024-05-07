@@ -6,19 +6,22 @@ import SecurityProduct from "../components/securityProduct";
 import Integrations from "../components/Integrations";
 import Discover from "../components/Discover";
 import Footer from "../components/Footer";
+import Hero from "../components/case/Hero";
+import Transform from "../components/case/Transform";
 
-export default function Case () {
-    return (
-        <>
-        <Zuna />
-        <CFOs />
-        <Seamless />
-        <TemplateFactory />
-        <SecurityProduct/>
-        <Integrations />
-        <Discover /> 
-        <Footer />
-
-        </>
-    )
+export default function Case() {
+  return (
+    <>
+      <Hero />
+      <Zuna />
+      <CFOs />
+      <Seamless />
+      <Transform />
+      <TemplateFactory />
+      <Integrations />
+      <SecurityProduct />
+      <Discover />
+      <Footer />
+    </>
+  );
 }
