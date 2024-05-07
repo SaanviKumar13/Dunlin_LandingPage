@@ -1,34 +1,8 @@
 import React from "react";
 import { FaStar } from "react-icons/fa6";
 import UseCaseCard from "./UseCaseCard";
-const useCases = [
-  {
-    name: "Strategic Decision",
-    desc: "Ganister offers a holistic view of KPIs, empowering confident strategic decisions with comprehensive insights, including budgets vs actuals and departmental metrics.",
-  },
-  {
-    name: "Data-Driven Insights",
-    desc: "Ganister's reporting suite drives informed decision-making for CFOs with consolidated financial insights.",
-  },
-  {
-    name: "Time and Resource Optimization",
-    desc: "Ganister automates book closures, freeing teams for strategic planning",
-  },
-  {
-    name: "Agility and Responsiveness",
-    desc: "Ganister enables CFOs to swiftly adapt with on-demand reports, ensuring agility in dynamic markets",
-  },
-  {
-    name: "Centralized Financial System",
-    desc: "Ganister streamlines access to vital financial information for CFOs, enhancing efficiency with a consolidated reporting system",
-  },
-  {
-    name: "Efficiency Amplification and Operational Oversight",
-    desc: "Ganister streamlines access to vital financial information for CFOs, enhancing efficiency with a consolidated reporting system",
-  },
-];
 
-function Hero() {
+function Hero({ text, desc, useCases }) {
   return (
     <div className="hero-container relative">
       <div
@@ -88,13 +62,10 @@ function Hero() {
         <div className="flex flex-col justify-start items-start my-10 p-10">
           <img src="/usecases.svg" alt="use case" className="w-36 h-14" />
           <p className="my-10 font-extrabold text-3xl md:text-5xl lg:text-7xl leading-[82.263px] tracking-tighter text-gray-200">
-            Is Strategic Finance Losing Priority to Month-End Accounting Crunch?
+            {text}
           </p>
           <div className="w-[60vw] font-bricolage text-2xl font-normal text-white opacity-80 leading-normal md:leading-[38.561px] tracking-tighter md:tracking-normal py-6">
-            Ganister enables CFOs to prioritize Strategic Finance by automating
-            book closures, while also offering instant reporting features to
-            uncover and communicate insights to stakeholders in a format that
-            captivates.
+            {desc}
           </div>
           <div className="flex flex-row gap-2 items-center">
             <button className="bg-[#FFFFFF] text-[#3F57D6] font-bold lg:py-4 lg:px-6 px-4 py-2 mx-auto border-4 border-solid border-gray-300 rounded-2xl">
@@ -134,7 +105,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row gap-5 p-10 overflow-y-scroll no-scrollbar bg-[#0c4797]">
+      <div className="flex flex-row gap-3 md:gap-5 p-10 overflow-y-scroll no-scrollbar bg-[#0c4797]">
         {useCases.map((useCase, index) => (
           <UseCaseCard key={index} {...useCase} />
         ))}
